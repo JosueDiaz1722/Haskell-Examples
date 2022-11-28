@@ -1,0 +1,8 @@
+{
+    "name": "Pablo",
+    "salaries": {
+        "Quincena" : 600.45,
+        "Fin de Mes" : 950.00 
+    },
+    "position": "Tier 2" 
+}
