@@ -25,6 +25,8 @@ dependencies:
 - bytestring
 - containers
 - optparse-generic
+- cassava
+- vector
 
 ghc-options:
 - -Wall
