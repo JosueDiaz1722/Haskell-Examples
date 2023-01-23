@@ -28,16 +28,19 @@ library
       Aeson
       Lib
       Optparse
+      QuickCheck
   other-modules:
       Paths_Haskell_Examples
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      aeson
+      QuickCheck
+    , aeson
     , base >=4.7 && <5
     , bytestring
     , containers
+    , hspec
     , optparse-generic
   default-language: Haskell2010
 
@@ -50,10 +53,12 @@ executable Haskell-Examples-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       Haskell-Examples
+    , QuickCheck
     , aeson
     , base >=4.7 && <5
     , bytestring
     , containers
+    , hspec
     , optparse-generic
   default-language: Haskell2010
 
@@ -61,15 +66,18 @@ test-suite Haskell-Examples-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      QuickCheckSpec
       Paths_Haskell_Examples
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       Haskell-Examples
+    , QuickCheck
     , aeson
     , base >=4.7 && <5
     , bytestring
     , containers
+    , hspec
     , optparse-generic
   default-language: Haskell2010

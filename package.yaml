@@ -25,6 +25,8 @@ dependencies:
 - bytestring
 - containers
 - optparse-generic
+- QuickCheck
+- hspec
 
 ghc-options:
 - -Wall
