@@ -27,8 +27,13 @@ library
   exposed-modules:
       Aeson
       Cassava
+      Concurrent
+      GADTs
+      Lazy
       Lib
       Optparse
+      Phanton
+      RankN
   other-modules:
       Paths_Haskell_Examples
   hs-source-dirs:
